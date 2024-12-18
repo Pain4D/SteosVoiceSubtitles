@@ -1,3 +1,5 @@
+Желательно использовать версию Python 3.11
+
 Перед запуском в папку youtube-voice-app клонировать репозиторий https://github.com/Pain4D/youtube-voice-app
 
 Создать виртуальную среду с использованием requirements.txt
