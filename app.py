@@ -28,7 +28,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-STEOSVOICE_API_KEY = "3b0537a8-0b32-4e68-b4a8-4c3ca1e93466"
+STEOSVOICE_API_KEY = "ВАШ_STEOSVOICE_ТОКЕН"
 STEOSVOICE_API_URL = f"https://public.api.voice.steos.io/api/v1/synthesize-controller/synthesis-by-text?authToken={STEOSVOICE_API_KEY}"
 
 class VideoRequest(BaseModel):
@@ -45,7 +45,7 @@ async def process_video(request: VideoRequest):
         'writesubtitles': True,
         'subtitleslangs': ['ru'],  # Указание языка субтитров
         'skip_download': True,
-        'cookies': 'E:\proj\www.youtube.com_cookies (3).txt',      # Путь к файлу с куки
+        'cookies': 'E:\proj\www.youtube.com_cookies.txt',      # Путь к файлу с куки
         'force_generic_extractor': True,
         'http_headers': {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.54 Safari/537.36',
